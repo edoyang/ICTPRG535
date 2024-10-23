@@ -1,0 +1,33 @@
+.services-page {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding);
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.services-page .services {
+  display: flex;
+  gap: 5rem;
+}
+
+.services-left,
+.services-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.services-right {
+  padding-top: 3rem;
+}
+
+.service {
+  display: flex;
+  gap: 1rem;
+}
+
+.service h1 {
+  font-size: 2rem;
+  color: var(--text-color);
+}

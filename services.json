@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Digital Illustration",
+    "description": "Digital Illustration is the use of digital tools to produce images under the direct manipulation of the artist, usually through a pointing device such as a tablet or a mouse."
+  },
+  {
+    "id": 2,
+    "name": "Website Design & Development",
+    "description": "Website Design & Development is the process of creating websites. It encompasses several different aspects, including webpage layout, content production, and graphic design."
+  },
+  {
+    "id": 3,
+    "name": "Social Media Management",
+    "description": "Social Media Management is the process of creating, scheduling, analyzing, and engaging with content posted on social media platforms, like Facebook, Instagram, and Twitter."
+  },
+  {
+    "id": 4,
+    "name": "Content Writing",
+    "description": "Content Writing is the process of planning, writing and editing web content, typically for digital marketing purposes."
+  },
+  {
+    "id": 5,
+    "name": "Video Editing",
+    "description": "Video Editing is the manipulation and arrangement of video shots. Video editing is used to structure and present all video information, including films and television shows, video advertisements and video essays."
+  },
+  {
+    "id": 6,
+    "name": "Social Media Marketing",
+    "description": "Social Media Marketing is the use of social media platforms and websites to promote a product or service."
+  }
+]
