@@ -1,0 +1,35 @@
+:root {
+    --padding: 1rem;
+    --text-color: #333;
+}
+
+body,
+html,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    padding: 0.5rem var(--padding);
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: white;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+}
