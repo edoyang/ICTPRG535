@@ -1,0 +1,29 @@
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+}
+
+footer > p {
+  text-align: center;
+  padding: var(--padding);
+}
+
+footer .container > * {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer .container .main .social-media {
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer .container .main .social-media > * {
+  transition: scale 0.1s ease;
+}
+
+footer .container .main .social-media > *:hover {
+  scale: 1.5;
+}

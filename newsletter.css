@@ -1,0 +1,12 @@
+.newsletter .left form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newsletter .left form input {
+  padding: 1rem;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  background-color: #ffeef6;
+}

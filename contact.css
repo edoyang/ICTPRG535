@@ -1,0 +1,25 @@
+.contact-page .right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-page .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+
+.contact-page .right form input,
+.contact-page .right form textarea {
+  padding: 1rem;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  background-color: #ffeef6;
+}
+
+.contact-page .right form textarea {
+  resize: none;
+  height: 75px;
+}

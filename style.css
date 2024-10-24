@@ -48,6 +48,7 @@ header {
   width: 100%;
   top: 0;
   background-color: var(--background-primary);
+  z-index: 100;
 }
 
 header nav {
@@ -58,7 +59,7 @@ header nav {
 }
 
 .btn-primary {
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   background-color: var(--btn-primary);
   color: var(--btn-primary-text);
   border: none;
@@ -98,15 +99,14 @@ header nav {
   color: var(--btn-primary-text);
 }
 
-.hero,
+/* .hero,
 .about,
 .services-page,
 .team-page,
-/* .work-page, */
-.testimonial-page,
+.work-page,
 .contact-page,
-.newsletter,
-footer {
+.newsletter, */
+.testimonial-page {
   display: none !important;
 }
 
@@ -143,11 +143,11 @@ footer {
 .box-container-reversed > * {
   flex: 1;
   display: flex;
-  justify-content: center;
   min-width: 400px;
 }
 
 .box-container-reversed .left {
+  justify-content: start;
   align-items: center;
   padding: var(--padding);
 }
