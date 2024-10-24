@@ -98,11 +98,11 @@ header nav {
   color: var(--btn-primary-text);
 }
 
-/* .hero,
+.hero,
 .about,
 .services-page,
-.team-page, */
-.work-page,
+.team-page,
+/* .work-page, */
 .testimonial-page,
 .contact-page,
 .newsletter,
