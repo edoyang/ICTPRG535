@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
 :root {
   --padding: 1rem;
   --text-color: #333;
@@ -29,6 +31,7 @@ html,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 0.4s ease, color 0.1s ease;
 }
 
 a {
@@ -95,10 +98,10 @@ header nav {
   color: var(--btn-primary-text);
 }
 
-.hero,
+/* .hero,
 .about,
-/* .services-page, */
-.team-page,
+.services-page,
+.team-page, */
 .work-page,
 .testimonial-page,
 .contact-page,

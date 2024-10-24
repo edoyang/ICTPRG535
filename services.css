@@ -28,6 +28,9 @@
 }
 
 .service h1 {
-  font-size: 2rem;
-  color: var(--text-color);
+  font-size: 3rem;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--text-color);
+  font-family: merriweather;
 }
