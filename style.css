@@ -9,6 +9,13 @@
   --btn-fill-background: #ff5678;
   --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   --background-primary: white;
+
+  /* Navbar */
+  --navbar-width: 38px; /* ONLY CHANGE THIS LINE */
+  --navbar-height: 5px; /* ONLY CHANGE THIS LINE */
+  --navbar-gap: 6px;
+  --navbar-animation: 200ms ease-in-out;
+  --bar-height: calc(var(--navbar-height) * 3 + var(--navbar-gap) * 2);
 }
 
 .dark {
@@ -39,10 +46,58 @@ a {
   color: var(--text-color);
 }
 
+.hamburger {
+  --x-width: calc(var(--bar-height) * 1.41421356237);
+
+  display: none;
+  flex-direction: column;
+  gap: var(--navbar-gap);
+  cursor: pointer;
+  width: max-content;
+  z-index: 100;
+}
+
+.hamburger::before,
+.hamburger::after,
+.hamburger input {
+  content: "";
+  background-color: var(--text-color);
+  width: var(--navbar-width);
+  height: var(--navbar-height);
+  border-radius: 100px;
+  transform-origin: left center;
+  transition: opacity var(--navbar-animation), width var(--navbar-animation),
+    rotate var(--navbar-animation), translate var(--navbar-animation);
+}
+
+.hamburger input {
+  appearance: none;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--navbar-height) / -2);
+}
+
+.hamburger:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--navbar-height) / 2);
+}
+
+.hamburger input:checked {
+  opacity: 0;
+  width: 0;
+}
+
 header {
   display: flex;
   padding: 0.5rem var(--padding);
   justify-content: space-between;
+  align-items: center;
   box-shadow: var(--box-shadow);
   position: sticky;
   width: 100%;
@@ -51,7 +106,8 @@ header {
   z-index: 100;
 }
 
-header nav {
+header nav,
+.nav-links {
   display: flex;
   gap: 2rem;
   text-align: center;
@@ -74,6 +130,7 @@ header nav {
   cursor: pointer;
   background-color: transparent;
   border: none;
+  z-index: 100;
 }
 
 .buttons {
@@ -123,7 +180,7 @@ header nav {
   flex: 1;
   display: flex;
   justify-content: center;
-  min-width: 400px;
+  min-width: 350px;
 }
 
 .box-container .left {

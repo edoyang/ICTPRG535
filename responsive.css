@@ -1,0 +1,118 @@
+@media screen and (max-width: 850px) {
+  .box-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .box-container .left {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .box-container-reversed {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .box-container-reversed .left {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .box-container-reversed .right {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .box-container-reversed .right > *,
+  .box-container .left > * {
+    min-width: 100%;
+  }
+
+  section {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-page .services {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .service {
+    flex-direction: column;
+    gap: 0;
+    text-align: left;
+  }
+
+  .team-page .team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .team-page .team-container .team-member {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .work-page .work {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .contact-page .right,
+  .contact-page .right form,
+  .contact-page .right form input,
+  .newsletter form,
+  .newsletter form input {
+    width: 100%;
+  }
+
+  footer > .container {
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer > .container .social-media {
+    justify-content: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger input:checked + .nav-links {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    width: 50%;
+    height: 100dvh;
+    background-color: var(--background-primary);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav:has(.hamburger input:checked) .nav-links {
+    display: flex;
+  }
+}
