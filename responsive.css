@@ -29,9 +29,9 @@
     gap: 2rem;
   }
 
-  .box-container-reversed .right > *,
-  .box-container .left > * {
-    min-width: 100%;
+  .box-container-reversed > *,
+  .box-container > * {
+    min-width: min-content;
   }
 
   section {

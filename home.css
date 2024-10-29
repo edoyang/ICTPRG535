@@ -1,4 +1,4 @@
 h1 {
-  font-size: 4.75rem;
+  font-size: var(--step-4);
   max-width: 450px;
 }

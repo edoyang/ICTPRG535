@@ -4,6 +4,7 @@
   gap: 3rem;
   padding: 3rem var(--padding);
   text-align: center;
+  text-align-last: left;
 }
 
 .team-container {
