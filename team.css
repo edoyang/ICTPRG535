@@ -3,13 +3,14 @@
   flex-direction: column;
   gap: 3rem;
   padding: 3rem var(--padding);
-  text-align: center;
-  text-align-last: left;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 500px));
+  align-self: center;
   gap: 3rem;
 }
 

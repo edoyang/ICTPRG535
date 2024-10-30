@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="newsletter.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="responsive.css">
 </head>
 
@@ -22,7 +24,9 @@
 
     <header>
         <div class="logo">
-            <h1>Zebb</h1>
+            <a href="#Home">
+                <h1>Zebb</h1>
+            </a>
         </div>
         <nav>
             <button id="dark-mode">
@@ -43,7 +47,7 @@
     <section class="hero box-container" id="Home">
         <div class="left">
             <h1>We help to create brands with coffee</h1>
-            <button class="btn-primary">See our Work</button>
+            <a href="#Work" class="btn-primary">See our Work</a>
         </div>
 
         <div class="right">
@@ -58,7 +62,9 @@
 
         <div class="right">
             <h1>About Us</h1>
-            <p>But I must explain to you how all thismistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.I wrote to let them know ready to came back they kicked me of their team slack all of us are make company email.</p>
+            <p>But I must explain to you how all thismistaken idea of denouncing pleasure and praising pain was born and
+                I will give you a complete account of the system.I wrote to let them know ready to came back they kicked
+                me of their team slack all of us are make company email.</p>
             <div class="buttons">
                 <button class="btn-primary">Learn more</button>
                 <button class="btn-fill">
@@ -214,6 +220,22 @@
     <script src="theme.js"></script>
     <script src="services.js"></script>
     <script src="team.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                const offset = 70;
+
+                window.scrollTo({
+                    top: target.getBoundingClientRect().top + window.scrollY - offset,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
 </body>
 
 </html>

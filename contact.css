@@ -11,6 +11,10 @@
   width: 80%;
 }
 
+.contact-page .right form label {
+  align-self: start;
+}
+
 .contact-page .right form input,
 .contact-page .right form textarea {
   padding: 1rem;

@@ -1,3 +1,7 @@
+.newsletter .left {
+  width: 100%;
+}
+
 .newsletter .left form {
   display: flex;
   flex-direction: column;
